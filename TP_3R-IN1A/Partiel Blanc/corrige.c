@@ -48,6 +48,27 @@ int si_palindrome(char* chaine){
     return 1;
 }
 
+float poids_moyen(Joueur equipe[], int nb_joueur){
+    float sum = 0;
+    for (int i = 0; i < nb_joueur++; i++)
+    {
+        sum += equipe[i].poids;
+    }
+
+    return sum / nb_joueur;
+    
+}
+
+void swap_joueurs(Joueur equipe[], int j1, int j2) {
+    Joueur var = equipe[j1];
+    equipe[j1] = equipe[j2];
+    equipe[j2] = var;
+
+    int tmp = equipe[j1].position;
+    equipe[j1].position = equipe[j2].position;
+    equipe[j2].position = tmp;
+}
+
 int main() {
 
     char* chaine = "radar";
