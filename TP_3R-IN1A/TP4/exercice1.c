@@ -22,4 +22,4 @@ int main (int argc, char** argv) {
       
     secondToTime(atoi(argv[1]));
     return 0;
-}
+}-
